@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games</title>
+</head>
+<body>
+        {% extends "C:\Users\Гимназия1\Urban_projects\Module18\UrbanDjango\templates\fourth_task\menu.html" %}
+        {% block pagename %}
+        <h1>Игры</h1>
+        {% endblock %}
+
+        {% block menu %}
+        {{block.super}}
+        {% endblock %}
+
+        {% block context %}
+        {% for i in context %}
+        <li>{{i}}  <button>Купить</button></li>
+        {% endfor %}
+        {% endblock %}
+
+</body>
+</html>
