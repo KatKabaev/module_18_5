@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Cart</title>
+    <style>
+        .centered-window {
+            width: 50%; /* Ширина окна */
+            margin: 0 auto; /* Центрирование по горизонтали */
+            margin-top: 50px; /* Расстояние от верхнего края окна до начала содержимого */
+            text-align: center; /* Центрирование текста внутри окна */
+            border: 1px solid #ddd; /* Рамка окна */
+            padding: 20px; /* Внутренние отступы */
+            background-color: #ebedff; /* Светлый синий цвет */
+            border-radius: 8px; /* Закругленные углы */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Тень */
+        }
+
+        .centered-window h1 {
+            color: #4D4D4F; /* Цвет заголовка */
+            font-weight: bold; /* Жирный шрифт */
+            margin-bottom: 15px; /* Отступ под заголовком */
+            font-family: 'Open Sans', sans-serif; /* Шрифт с засечками */
+        }
+    </style>
 </head>
 <body>
-        {% extends "C:\Users\Гимназия1\Urban_projects\Module18\UrbanDjango\templates\fourth_task\menu.html" %}
+        <div class="centered-window">
+        {% extends "C:\Users\kabaeva\PycharmProjects\module_18_5\UrbanDjango\templates\fourth_task\menu.html" %}
         {% block pagename %}
         <h1>Корзина</h1>
         {% endblock %}
@@ -17,6 +38,8 @@
         {% block context %}
         <h1>Извините, ваша корзина пуста</h1>
         {% endblock %}
+
+        </div>
 
 </body>
 </html>

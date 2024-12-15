@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Menu</title>
+    <style>
+        .btn {
+            padding: 8px 15px;
+            background-color: #8db3d9;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,17 +25,17 @@
 
     <menu>
         {% block menu %}
-        <p><button>
-            <a href="/platform/">Магазин</a>
-        </button></p>
+        <p>
+            <a href="/platform/" class="btn">Магазин</a>
+        </p>
 
-        <p><button>
-            <a href="/platform/games">Игры</a>
-        </button></p>
+        <p>
+            <a href="/platform/games" class="btn">Игры</a>
+        </p>
 
-        <p><button>
-            <a href="/platform/cart">Корзина</a>
-        </button></p>
+        <p>
+            <a href="/platform/cart" class="btn">Корзина</a>
+        </p>
         {% endblock %}
     </menu>
 
