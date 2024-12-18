@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform</title>
+    <style>
+        .centered-window {
+            width: 50%; /* Ширина окна */
+            margin: 0 auto; /* Центрирование по горизонтали */
+            margin-top: 50px; /* Расстояние от верхнего края окна до начала содержимого */
+            text-align: center; /* Центрирование текста внутри окна */
+            border: 1px solid #ddd; /* Рамка окна */
+            background-color: #ebedff; /* Светлый синий цвет */
+            border-radius: 8px; /* Закругленные углы */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Тень */
+        }
+
+        .centered-window h1 {
+            color: #4D4D4F; /* Цвет заголовка */
+            font-weight: bold; /* Жирный шрифт */
+            margin-bottom: 15px; /* Отступ под заголовком */
+            font-family: 'Open Sans', sans-serif; /* Шрифт с засечками */
+        }
+
+        .centered-window p {
+            margin-bottom: 10px; /* Отступ между надписями */
+            font-size: 16px; /* Размер шрифта */
+            color: #888; /* Цвет основного текста */
+            font-family: sans-serif; /* Шрифт без засечек */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Смещение тени */
+        }
+
+        .centered-window .divider {
+            width: 80%; /* Ширина линии */
+            height: 1px; /* Толщина линии */
+            background-color: #ddd; /* Цвет линии */
+            margin: 20px 0; /* Отступы сверху и снизу */
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-window">
+                {% extends "C:\Users\kabaeva\module_18_5\DjangoProject\templates\first_task\menu.html" %}
+                {% block pagename %}
+                <h1>Главная страница</h1>
+                {% endblock %}
+
+                {% block menu %}
+                {{block.super}}
+                {% endblock %}
+
+                {% block context %}
+                {{block.super}}
+                {% endblock %}
+
+    </div>
+
+</body>
+</html>
